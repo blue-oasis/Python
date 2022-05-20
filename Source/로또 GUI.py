@@ -36,23 +36,19 @@ class lootto:
         window.mainloop()
 
     def start(self):
+        Lottoset = set([])
+        while(len(Lottoset) < 6) :
+            Lottoset.add(random.randint(1, 45))
 
-        self.v1.set(str(random.randint(1, 45)))
-        self.v2.set(str(random.randint(1, 45)))
-        self.v3.set(str(random.randint(1, 45)))
-        self.v4.set(str(random.randint(1, 45)))
-        self.v5.set(str(random.randint(1, 45)))
-        self.v6.set(str(random.randint(1, 45)))
-        if self.v1 == self.v2 or self.v3 or self.v4 or self.v5 or self.v6 :
-            self.v1.set(str(random.randint(1, 45)))
-        if self.v2 == self.v3 or self.v4 or self.v5 or  self.v6 :
-            self.v2.set(str(random.randint(1, 45)))
-        if self.v3 == self.v4 or self.v5 or self.v6  :
-            self.v3.set(str(random.randint(1, 45)))
-        if self.v4 == self.v5 or self.v6 :
-            self.v4.set(str(random.randint(1, 45)))
-        if self.v5 == self.v6 :
-            self.v5.set(str(random.randint(1, 45)))
+        Lottolist = list(Lottoset)
+        Lottolist.sort()
+        self.v1.set(str(Lottolist[0]))
+        self.v2.set(str(Lottolist[1]))
+        self.v3.set(str(Lottolist[2]))
+        self.v4.set(str(Lottolist[3]))
+        self.v5.set(str(Lottolist[4]))
+        self.v6.set(str(Lottolist[5]))
+
 
             
 
