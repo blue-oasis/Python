@@ -22,10 +22,10 @@ class MenuDemo:
         frame0 = Frame(window)
         frame0.grid(row = 1, column = 1, sticky = W)
 
-        plusImage = PhotoImage(file = "image/plus.gif")
-        minusImage = PhotoImage(file = "image/minus.gif")
-        timesImage = PhotoImage(file = "image/times.gif")
-        divideImage = PhotoImage(file = "image/divide.gif")
+        plusImage = PhotoImage(file = "../image/plus.gif")
+        minusImage = PhotoImage(file = "../image/minus.gif")
+        timesImage = PhotoImage(file = "../image/times.gif")
+        divideImage = PhotoImage(file = "../image/divide.gif")
 
 
         Button(frame0, image = plusImage, command = self.add).grid(row = 1, column = 1, sticky = W)
